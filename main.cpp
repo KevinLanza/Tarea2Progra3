@@ -37,7 +37,11 @@ bool comparar(string *a, string *b)
 //Desreferencia a (dado) y devuelve su primera letra
 char getPrimeraLetra(string* a)
 {
-    char obtener = a->at(0);//Se hace una variable char y mediante una funcion se obtiene el primer elemento de la palabra
+    // Tomando referencia de   http://www.cplusplus.com/reference/string/string/at/
+    // y explicacion brindada por Ahmed Castro.
+    //Creamos nuestra varible para almacenar el valor y la igualamos a nuestra funcion at
+    //que sirve para encontrar la posicion dentro del string en este caso posicion 0 para que muestre la primera.
+    char obtener = a->at(0);
     return obtener;//Devuelve el valor de la variable hecha
 }
 
