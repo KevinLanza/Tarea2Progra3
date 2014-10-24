@@ -37,8 +37,8 @@ bool comparar(string *a, string *b)
 //Desreferencia a (dado) y devuelve su primera letra
 char getPrimeraLetra(string* a)
 {
-
-    return 'a';
+    char obtener = a->at(0);//Se hace una variable char y mediante una funcion se obtiene el primer elemento de la palabra
+    return obtener;//Devuelve el valor de la variable hecha
 }
 
 //Desreferencia a (dado) y devuelve true si es palindroma de lo contrario devuelve false
